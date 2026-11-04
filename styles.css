@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slide-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s linear;
+    width: 20em;
+    height: 20em;
+}
+
+.active-slide {
+    opacity: 1;
+    visibility: visible;
+}
+
+.number {
+    position: absolute;
+    top: -30px;
+    color: black;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: -30px;
+    color: black;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.dot {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgb(184, 185, 187);
+}
+
+.active-dot {
+    background-color: rgb(123, 124, 126);
+}
